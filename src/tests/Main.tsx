@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Menu } from './Menu';
 import { Join } from './Join';
 import { Login } from './Login';
 import { Community } from './Community';
@@ -10,23 +11,7 @@ export const Main = () => {
 
   return (
     <>
-      <ul>
-        <li>
-          <button onClick={() => setName('join')}>join</button>
-        </li>
-        <li>
-          <button onClick={() => setName('login')}>login</button>
-        </li>
-        <li>
-          <button onClick={() => setName('community')}>community</button>
-        </li>
-        <li>
-          <button onClick={() => setName('chatting')}>chatting</button>
-        </li>
-        <li>
-          <button onClick={() => setName('mypage')}>mypage</button>
-        </li>
-      </ul>
+      <Menu callback={(opt: String) => setName(opt)} />
       {name === 'join' && <Join />}
       {name === 'login' && <Login />}
       {name === 'community' && <Community />}
