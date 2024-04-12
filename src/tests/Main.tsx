@@ -13,9 +13,17 @@ export const Main = () => {
       <ul>
         <li>
           <button onClick={() => setName('join')}>join</button>
+        </li>
+        <li>
           <button onClick={() => setName('login')}>login</button>
+        </li>
+        <li>
           <button onClick={() => setName('community')}>community</button>
+        </li>
+        <li>
           <button onClick={() => setName('chatting')}>chatting</button>
+        </li>
+        <li>
           <button onClick={() => setName('mypage')}>mypage</button>
         </li>
       </ul>
