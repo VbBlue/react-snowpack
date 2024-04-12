@@ -1,7 +1,9 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
   mount: {
-    /* ... */
+    // directory name: 'build derectoory'
+    public: '/',
+    src: '/dist',
   },
   plugins: [
     /* ... */
